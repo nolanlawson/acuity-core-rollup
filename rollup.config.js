@@ -14,17 +14,20 @@ export default {
     },
 
     plugins: [
+        lwc(),
         babel({
-            presets: ["@babel/preset-typescript"],
+            "plugins": [
+                ["@babel/plugin-transform-typescript"],
+                ["@babel/plugin-proposal-decorators", { "legacy": true }],
+            ],
             extensions:[".ts"]
         }),
-        typescript(),
+        // typescript(),
         replace({
             "process.env.NODE_ENV": JSON.stringify("development"),
         }),
-        lwc(),
         serve({
-            host:'development.acuity.nl',
+            host:'localhost',
             port: 8080,
             contentBase: 'src'
         }),

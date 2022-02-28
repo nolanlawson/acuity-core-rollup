@@ -4,13 +4,17 @@
     "version": "0.0.1",
     "author": "Jeroen Somhorst",
     "dependencies": {
+        "@babel/plugin-proposal-decorators": "^7.17.2",
+        "@babel/plugin-transform-typescript": "^7.16.8",
         "@lwc/synthetic-shadow": "^2.5.8",
         "@rollup/plugin-babel": "^5.3.1",
         "@salesforce-ux/design-system": "^2.16.2",
         "compression": "^1.7.4",
         "express": "^4.17.1",
         "helmet": "^4.6.0",
-        "lightning-base-components": "^1.13.7-alpha"
+        "lightning-base-components": "^1.13.7-alpha",
+        "tslib": "^2.3.1",
+        "typescript": "^4.5.5"
     },
     "devDependencies": {
         "@babel/preset-typescript": "^7.16.7",
